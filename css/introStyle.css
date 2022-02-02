@@ -1,0 +1,44 @@
+.blue {
+    color : blue;
+
+    color: rgb(red, green, blue);
+    /* or numbers 0..255 */
+    
+    color:rgba(255, 255, 0, .5); 
+    /* (red, green, blue, alpha for transparency)
+        alpha: [0..1]  1=opaque, 0=transparent
+    */
+    
+    color: #00000099; 
+    /* equivalent but in hexadecimal ( each two numbers represent: r,g,b,a => #rrggbbaa) */
+    
+    color: hsl(0,100%,50%); 
+    /* hsl = 
+    [HUE 0->360 colors] 
+    [SATURATION 0=no color b/w --> 100%=bright color] 
+    [LIGHTNESS 0%=black --> 100%=white]*/
+    color: hsla(0,100%,50%, 0.5);
+    /* last part for alpha: transparency*/
+}
+
+.box {
+    /*
+    px
+
+    %
+    
+    em : 
+        for fonts and padding around fonts... scales off of the font size of the parent
+        exp: if parent font-size = 16 px => 1em = 16px, 2em = 32px
+    
+    rem : 
+        same as em but scales off of the font size of the document root 
+    */
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 50px;
+    border: 10px solid grey;
+    border-radius: 10%;
+    background-color: bisque;
+}
